@@ -1,4 +1,4 @@
-﻿{
+{
   "userSecretsId": "aspnet-BookJump-0a64a9ff-cef8-4f1c-a81a-bb463a7ba772",
 
   "dependencies": {
@@ -42,7 +42,8 @@
     "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
       "version": "1.0.0-preview2-final",
       "type": "build"
-    }
+    },
+    "Google.Apis.Books.v1": "1.16.0.600"
   },
 
   "tools": {
