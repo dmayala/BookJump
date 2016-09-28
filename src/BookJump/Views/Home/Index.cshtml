@@ -5,11 +5,23 @@
 
 <h2>All Books</h2>
 <hr />
-<ul>
+<div class="grid">
     @foreach (var book in Model)
     {
-        <li>
-            @book.Title
-        </li>
+        <div class="grid-item">
+            <img src="@book.Cover" />
+        </div>
     }
-</ul>
+</div>
+
+@section scripts {
+    <script>
+        $(function() {
+            $('.grid').masonry({
+                itemSelector: '.grid-item',
+                columnWidth: 128,
+                isFitWidth: true
+            });
+        });
+    </script>
+}
