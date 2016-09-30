@@ -1,0 +1,21 @@
+﻿@model BookJump.ViewModels.TradesViewModel
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Borrow Requests</h2>
+<ul>
+    @foreach (var borrowRequest in Model.BorrowRequests)
+    {
+        <li>@borrowRequest.Book.Title</li>
+    }
+</ul>
+
+<h2>Lending Requests</h2>
+<ul>
+    @foreach (var lendingRequest in Model.LendingRequests)
+    {
+        <li>@lendingRequest.Book.Title</li>
+    }
+</ul>

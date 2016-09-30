@@ -1,4 +1,4 @@
-﻿namespace BookJump.Models
+﻿namespace BookJump.ViewModels
 {
     public class BookFormViewModel
     {

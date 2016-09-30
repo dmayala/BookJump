@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BookJump.Data;
+﻿using BookJump.Data;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookJump.Controllers
+namespace BookJump.Controllers.Web
 {
     public class HomeController : Controller
     {

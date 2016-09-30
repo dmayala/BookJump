@@ -11,6 +11,7 @@ namespace BookJump.Data
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Book> Books { get; set; }
+        public DbSet<TradeRequest> TradeRequests { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -19,10 +20,10 @@ namespace BookJump.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Entity<TradeRequest>()
+                .HasKey(tr => new { tr.BookId, tr.BorrowerId });
+
             base.OnModelCreating(builder);
-            // Customize the ASP.NET Identity model and override the defaults if needed.
-            // For example, you can rename the ASP.NET Identity table names and more.
-            // Add your customizations after calling base.OnModelCreating(builder);
         }
     }
 }

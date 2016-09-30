@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using BookJump.Models;
+using BookJump.Services;
+using BookJump.ViewModels.AccountViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
-using BookJump.Models;
-using BookJump.Models.AccountViewModels;
-using BookJump.Services;
 
-namespace BookJump.Controllers
+namespace BookJump.Controllers.Web
 {
     [Authorize]
     public class AccountController : Controller

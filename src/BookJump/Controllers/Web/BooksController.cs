@@ -3,12 +3,13 @@ using System.Threading.Tasks;
 using BookJump.Data;
 using BookJump.Models;
 using BookJump.Services;
+using BookJump.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace BookJump.Controllers
+namespace BookJump.Controllers.Web
 {
     public class BooksController : Controller
     {

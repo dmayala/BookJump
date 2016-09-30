@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using BookJump.Models;
 
-namespace BookJump.Models
+namespace BookJump.ViewModels
 {
     public class MineViewModel
     {
