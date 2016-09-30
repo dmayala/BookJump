@@ -23,6 +23,11 @@ namespace BookJump.Data
             _context.Books.Add(book);
         }
 
+        public Book GetBook(int bookId)
+        {
+            return _context.Books.SingleOrDefault(b => b.Id == bookId);
+        }
+
         public IEnumerable<Book> GetBooks()
         {
             return _context.Books.ToList();

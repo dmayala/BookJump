@@ -7,6 +7,7 @@ namespace BookJump.Data
     {
         bool SaveAll();
         void AddBook(Book book);
+        Book GetBook(int bookId);
         IEnumerable<Book> GetBooks();
         IEnumerable<Book> GetBooksByOwner(string ownerId);
         TradeRequest GetTradeRequest(int bookId, string borrowerId);

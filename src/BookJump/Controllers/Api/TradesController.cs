@@ -26,11 +26,15 @@ namespace BookJump.Controllers.Api
         {
             var userId = _userManager.GetUserId(User);
 
+            var book = _repository.GetBook(dto.BookId);
+            if (book.OwnerId == userId)
+                return BadRequest("You cannot borrow your own book!");
+
             var tradeRequest = _repository.GetTradeRequest(dto.BookId, userId);
             if (tradeRequest != null)
-                return BadRequest(tradeRequest.Book.OwnerId == userId ? 
-                    "You cannot borrow your own book." :
-                    "You have already requested this book.");
+            {
+                return BadRequest("You have already requested this book.");
+            }
 
             tradeRequest = new TradeRequest()
             {

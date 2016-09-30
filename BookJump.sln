@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BookJump", "src\BookJump\BookJump.xproj", "{3045B79C-1B29-4663-A1F5-A4B887E8F6F1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5DE683DA-78F7-4AF3-951A-2053CEEDB720}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BookJump.Tests", "test\BookJump.Tests\BookJump.Tests.xproj", "{7FB1614D-D491-4699-96A9-C9E958B898DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +26,16 @@ Global
 		{3045B79C-1B29-4663-A1F5-A4B887E8F6F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3045B79C-1B29-4663-A1F5-A4B887E8F6F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3045B79C-1B29-4663-A1F5-A4B887E8F6F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB1614D-D491-4699-96A9-C9E958B898DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB1614D-D491-4699-96A9-C9E958B898DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB1614D-D491-4699-96A9-C9E958B898DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB1614D-D491-4699-96A9-C9E958B898DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3045B79C-1B29-4663-A1F5-A4B887E8F6F1} = {C7243BB0-B69F-4084-830B-1F9DC1857D37}
+		{7FB1614D-D491-4699-96A9-C9E958B898DC} = {5DE683DA-78F7-4AF3-951A-2053CEEDB720}
 	EndGlobalSection
 EndGlobal
